@@ -1,0 +1,27 @@
+body {
+    margin: 0px;
+}
+header{
+    background: linear-gradient(45deg, white, #180638);
+    padding: 3%;
+}
+#logo {
+    width: 25%;
+    height: 25%;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+.menu a {
+    text-decoration: none;
+    font-size: 150%;
+    color: #210f40;
+    margin-right: 10%;
+    font-family: cursive;
+    padding: 0.5%;
+    border: 2px solid #210f40;
+
+    
+}
