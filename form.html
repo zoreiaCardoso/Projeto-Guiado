@@ -3,7 +3,10 @@
 
 <head>
     <title>Meu primeiro projeto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/form.css">
+
 </head>
 
 <body>
@@ -14,12 +17,36 @@
         <a href="./index.html">
             Listagem
         </a>
-        <a href="./form.html">
+        <a href="./form.html" style="margin-left: 10%; margin-right: 0;">
             Cadastrar  
         </a>
     </div>
     <section class="corpo">
-        formulário
+       <form class="form">
+            <div  class="form-line">
+                <label class="big-label" for="name">Nome:</label>
+                <input name="name" id="name" required type="text"/>
+            </div>
+            <div class="form-line">
+                <label class="big-label"for="phone">Telefone:</label>
+                <input name="phone" id="phone" required type="tel"/>
+            </div>
+            <div style="display: flex;" class="form-line">
+
+                <label class="big-label">Experiência prévia:</label>
+
+                <div style="display: inline-block; width: 50%;">
+                    <input type="radio" name="xp" id="xp-yes"/><label for="xp-yes">
+                        SIM
+                    </label>
+                    <br/>
+                    <input type="radio" name="xp" id="xp-no"/><label for="xp-no">
+                        NÃO
+                    </label>
+                </div>
+            </div>
+            <input type="submit" name="botão" id="botão" value="salvar"/>
+       </form>
     </section>
 </body>
 
